@@ -1,19 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      colors:{
-        'darkergreen': '#132a13',
-        'darkgreen': '#31572c',
-        'greencolor': '#4f772d',
-        'lightgreen': '#90a955',
-        'superlightgreen': '#ecf39e',
-        'whitecolor': '#f2f2f2',
-        'blackcolor': '161616'
+      colors: {
+        'darkBlue': '#0D1B2A',
+        'blue': '#1B263B',
+        'ligthBlue': '#415A77',
+        'grey': '#778DA9',
+        'myWhite': '#E0E1DD'
       }
     },
   },
   plugins: [],
 }
-

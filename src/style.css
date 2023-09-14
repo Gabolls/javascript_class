@@ -23,3 +23,25 @@
     @apply rounded-full
   }
 }
+
+footer{
+  position: fixed;
+  top: 10px;
+
+  
+}
+
+header{
+  width: 30%;
+}
+
+#up{
+  height: 25%;
+  width: 100%;
+}
+
+#down{
+  height: 75%;
+  width: 100%;
+}
+

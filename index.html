@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Final</title>
   </head>
-  <body class="bg-black text-white flex h-screen overflow-hidden">
-    <header class="bg-slate-800 h-screen p-4">
-      <ul class="uppercase font-bold h-full flex flex-col gap-4 pt-4 pl-4">
-        <li>Home</li>
-        <li>Albums</li>
-        <li>Songs</li>
-      </ul>
+  <body class="bg-darkBlue text-white flex h-screen overflow-hidden w-screen">
+    <header class="bg-slate-800 h-screen flex flex-col gap-2">
+    
+      <div class="bg-myWhite rounded-lg" id="up"></div>
+        <div class="bg-ligthBlue rounded-lg" id="down"></div>
+       
+      
     </header>
     <main class="w-full">
       <h2 class="font-bold text-xl p-4">Lista de canciones</h2>
@@ -20,7 +20,13 @@
       <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto" id="track_list">
       </div>
 
-      <div class="h-28 sticky bottom-0 w-full bg-gray-950 flex justify-between" id="current-song">
+      
+
+
+    </main>
+    <footer class="">
+
+      <div class="h-28 w-full fixed bottom-0 bg-gray-950 flex justify-between" id="current-song">
         <div class="h-full flex">
           <div class="h-full w-auto">
             <img 
@@ -35,9 +41,7 @@
             <p class="opacity-60 text-sm" id="current-song-author"></p>
           </div>
         </div>
-        <h1 class="text-9xl font-bold underline">
-          Hello world!
-        </h1>
+        
 
         <div class="p-4 flex gap-8">
   
@@ -73,10 +77,6 @@
 
         <audio src="/" id="current-song-audio" autoplay loop></audio>
       </div>
-
-
-    </main>
-    <footer>
 
     </footer>
     <script type="module" src="/src/main.js"></script>
