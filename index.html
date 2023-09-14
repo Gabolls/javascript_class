@@ -1,56 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reproductor de musica gabolls</title>
+    <title>Proyecto Final</title>
   </head>
-  <body>
-    <div class="background"></div>
-    <header>
-      
-      <div class="up">
-
-        <div class="inicio"><button><img src="/assets/inicio-activo.svg" alt="inicio-activo" class="home">Inicio</button></div>
-
-        <div class="buscar"> <button><img src="/assets/buscar (1).svg" alt="busvar inactivo" class="search">Buscar</button></div>
-
-      </div>
-
-      <div class="down">
-        Tus listas
-      </div>
-
-
-
-
+  <body class="bg-black text-white flex h-screen overflow-hidden">
+    <header class="bg-slate-800 h-screen p-4">
+      <ul class="uppercase font-bold h-full flex flex-col gap-4 pt-4 pl-4">
+        <li>Home</li>
+        <li>Albums</li>
+        <li>Songs</li>
+      </ul>
     </header>
+    <main class="w-full">
+      <h2 class="font-bold text-xl p-4">Lista de canciones</h2>
 
-
-      <div class="sidebar"> <img src="/burguer.svg" alt="" ></div>
-
-    <div class="gap"></div>
-    
-    <main>
-      
-      <div class="main-song"><img src="" alt="imagen de la cancion principal"></div>
-
-      <div class="container" id="track-list">
-
-       
-
-      
+      <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto" id="track_list">
       </div>
+
+      <div class="h-28 sticky bottom-0 w-full bg-gray-950 flex justify-between" id="current-song">
+        <div class="h-full flex">
+          <div class="h-full w-auto">
+            <img 
+              src="" 
+              alt=""
+              class="h-full"
+              id="current-song-img"
+            >
+          </div>
+          <div class="flex flex-col h-full justify-center p-4">
+            <h4 class="font-semibold" id="current-song-title"></h4>
+            <p class="opacity-60 text-sm" id="current-song-author"></p>
+          </div>
+        </div>
+        <h1 class="text-9xl font-bold underline">
+          Hello world!
+        </h1>
+
+        <div class="p-4 flex gap-8">
+  
+          <button
+            id="current-song-prev"
+          >
+            <img 
+              src="/prev.svg" 
+              class="h-10"
+              alt=""
+            >
+          </button>
+          <button
+            id="current-song-play"
+          >
+            <img 
+              src="/pause.svg" 
+              class="h-10"
+              id="current-song-play-img"
+            >
+          </button>
+          <button
+            id="current-song-next"
+          >
+            <img 
+              src="/next.svg" 
+              class="h-10"
+              alt=""
+            >
+          </button>
+  
+        </div>
+
+        <audio src="/" id="current-song-audio" autoplay loop></audio>
+      </div>
+
 
     </main>
+    <footer>
 
-
-
-  
-
-    <footer class="footer">footer</footer>
-    <script type="module" src="/main.js"></script>
-    
+    </footer>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
