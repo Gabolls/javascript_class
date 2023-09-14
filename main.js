@@ -1,35 +1,52 @@
 import './style.scss'
-fetch('https://leonardoapi.onrender.com/music').then(res => res.json())
-.then(arreglo => {
-
-    // Trabajaremos aquí
+import { CardSong } from './src/CardSong'
 
 
 
+const elementoDOM = document.getElementById('track-list')
 
 
-    const resultado = arreglo.map(
-        (res) => {
-        
-            return res.path.front
+fetch('https://leonardoapi.onrender.com/music')
+    .then( (res) => res.json())
+    .then( (data) => {
+
+
+        data.map( (song) => {
+           
+            elementoDOM.appendChild(
+                CardSong(song)
+            )
             
-
-
-        }
-    )
-
-    console.log(resultado)
-
-
-
-
-
-
-
-
-
-
-
-
+   })
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// elementoDOM.appendChild(nuevoElemento)
+
+
+
+// console.log(elementoDOM)
+
+
+
+
+
+
+
+
+
+
+
+

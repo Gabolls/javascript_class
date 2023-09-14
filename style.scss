@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* paleta de colores a falta de json 
    azul-muy-oscuro: 0D1B2A
    azul-oscuro: 1B263B
@@ -32,7 +37,7 @@ button{
     width: 10px;
 }
 
-.sidenav{
+header{
     
     display: flex;
     flex-direction: column;
@@ -83,6 +88,7 @@ button{
     background-color: #1B263B;
     width: 8%;
     display: none;
+    
     border-radius: 10px;
     background-image: url(/assets/burger.svg);
     background-repeat:no-repeat;
@@ -90,6 +96,10 @@ button{
     background-position:top ;
 }
 
+
+.opennav{ 
+    
+}
 
 main{
     display: flex;
@@ -116,30 +126,30 @@ background: linear-gradient(45deg, rgba(13,27,42,0.9770642201834863) 22%, rgba(6
         
         grid-template-columns: repeat(5, 200px);
         grid-template-rows: repeat(3, 250px);
-        gap: 80px 20px;
+        gap: 100px 20px;
         grid-auto-flow: row;
 
         div{
             background-color: #0D1B2A;
             border-radius: 10px;
-            
-            
-
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             img{
-                margin: 7% 0% 7% 7%;
-                border-radius: 10px;
-                
-
-                height: 70%;
-
+                margin-top: 5px;
+                height: 180px;
             }
+            
+            
+
+
+             }
         }
       }
       
 
 
-}
+
 
 .footer{
     background-color: #0e0e0e;
@@ -150,7 +160,7 @@ background: linear-gradient(45deg, rgba(13,27,42,0.9770642201834863) 22%, rgba(6
 }
 
 @media screen and (max-width: 1000px) {
-   .sidenav{
+   header{
     display: none;
    }
 
@@ -174,14 +184,3 @@ background: linear-gradient(45deg, rgba(13,27,42,0.9770642201834863) 22%, rgba(6
    }
 }
 
-@media  screen and (min-width: 1000px) {
- main{
-    .container{
-        grid-template-columns: repeat(4, 180px);
-        grid-template-rows: repeat(4, 210px);
-
-
-    }
-}
-
-}
