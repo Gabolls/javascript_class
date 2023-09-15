@@ -2,20 +2,38 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Final</title>
+    <title>Musica Alfa</title>
   </head>
-  <body class="bg-darkBlue text-white flex h-screen overflow-hidden w-screen">
-    <header class="bg-slate-800 h-screen flex flex-col gap-2">
+  <body class="bg-blue text-white flex h-screen overflow-hidden w-screen">
+    <header class="bg-darkBlue h-screen flex flex-col gap-2">
     
-      <div class="bg-myWhite rounded-lg" id="up"></div>
-        <div class="bg-ligthBlue rounded-lg" id="down"></div>
+      <div class="bg-blue rounded-lg flex flex-col justify-center items-center " id="up">
+        <div class="upper flex w-full justify-around">
+          <img src="/assets/inicio-activo.svg" alt="">
+        
+        <p class="">Inicio</p>
+      </div>
+      <div class="downup flex justify-around w-full">
+        <img src="/assets/buscar (1).svg" alt="">
+        <p>Buscar</p>
+      </div>
+        
+      </div>
+
+        <div class="bg-blue rounded-lg text-sm mt" id="down">
+          <p class="mt-3 ml-1">
+          Tus listas
+        </p>
+        </div>
        
       
     </header>
+
+    
     <main class="w-full">
-      <h2 class="font-bold text-xl p-4">Lista de canciones</h2>
+      <div class="font-bold text-xl  bg-white p-4" id="main-song"><h1>Canciones</h1></div>
 
       <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto" id="track_list">
       </div>

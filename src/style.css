@@ -32,16 +32,41 @@ footer{
 }
 
 header{
-  width: 30%;
+  width: 35%;border-right: solid 10px #0D1B2A;
 }
 
 #up{
   height: 25%;
   width: 100%;
+  font-size: 100px;
 }
 
 #down{
   height: 75%;
   width: 100%;
+  font-size: 40px;
+  
+}
+
+#up img {
+  height: 40px;
+
+
+}
+
+#up p{  
+  font-size: 30px;
+
+}
+
+#main-song{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(13,27,42);
+background: linear-gradient(45deg, rgba(13,27,42,0.9770642201834863) 22%, rgba(65,90,119,0.9571865443425076) 77%, rgba(51,60,91,0) 100%);
+height: 100px;
+font-size: 70px;
 }
 

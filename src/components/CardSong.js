@@ -7,7 +7,7 @@ export const CardSong = ({ data, eventLike, eventPlay }) => {
     "px-6",
     
     "relative",
-    "bg-slate-800",
+    "bg-darkBlue",
     "rounded-lg"
   )
   song.innerHTML = `
