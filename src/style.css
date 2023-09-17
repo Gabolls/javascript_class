@@ -86,7 +86,7 @@ main{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: rgba(13, 27, 42, 0.589);
+  background: rgba(13, 27, 42, 0.603);
   backdrop-filter: blur(12px);
 
 height: 100px;
