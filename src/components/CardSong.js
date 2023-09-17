@@ -8,10 +8,12 @@ export const CardSong = ({ data, eventLike, eventPlay }) => {
     
     "relative",
     "bg-darkBlue",
-    "rounded-lg"
+    "rounded-lg",
+    "cancion" 
+
   )
   song.innerHTML = `
-  <div class="h-52 w-full ">
+  <div class="h-52 w-full song_image ">
   
     <img class=" w-full h-full rounded-lg" src="${data.path.front}" alt="">
   </div>
@@ -19,7 +21,7 @@ export const CardSong = ({ data, eventLike, eventPlay }) => {
     <h4 class="font-semibold py-2">${data.title}</h4>
     <div class="flex justify-between opacity-60 text-sm whitespace-nowrap overflow-clip">
       <p>${data.author}</p>
-      <p>${data.album}</p>
+      <p class="album">${data.album}</p>
     </div>
   </div>
   `

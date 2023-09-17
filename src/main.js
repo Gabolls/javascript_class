@@ -23,13 +23,6 @@ getData(data => {
 })
 
 
-const buscar = getElementById('downup')
-
-
-
-
-
-
 
 
 
