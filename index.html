@@ -41,10 +41,7 @@
         
         <p class="">Inicio</p>
       </div>
-      <div class="downup flex justify-around w-full" id="downup">
-        <img src="/assets/buscar (1).svg" alt="">
-        <p>Buscar</p>
-      </div>
+      
         
       </div>
 
@@ -58,12 +55,24 @@
     </header>
 
     
-    <main class="">
-      <div class="font-bold text-xl  bg-white p-4" id="main-song"><h1>Canciones</h1></div>
+    <main class="" id="main">
+      <div class="font-bold text-xl bg-white p-4 flex" id="main-song"><h1>Canciones</h1></div>
+     
 
-      <div class="abajo_canciones"></div>
+      <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto " id="track_list">
+      </div>
 
-      <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto" id="track_list">
+       <div class="h-full">
+        
+        <input type="text" class="" placeholder="buscar" id="buscar">
+        
+       
+      </input>
+
+
+        <div class="pb-60 grid mx-auto justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl p-8 gap-10 h-full overflow-y-auto " id="search_list">
+        </div>
+        
       </div>
 
       
