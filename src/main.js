@@ -33,6 +33,17 @@ const buscar = () =>{
 
 const elementoDOM = document.getElementById('up')
 
+const inicio = document.createElement('button')
+inicio.classList.add('flex', 'justify-around', 'w-full')
+inicio.innerHTML = `<img src="/assets/inicio-activo.svg" alt="">
+<p>Inicio</p>`
+
+inicio.addEventListener('click', () => {
+    document.getElementById('track_list').classList.remove('hidden'),
+    document.getElementById('main-song').classList.remove('hidden')
+  
+})
+
 
 const nodoHTML = document.createElement('button')
 nodoHTML.classList.add('flex', 'justify-around', 'w-full')
@@ -64,8 +75,9 @@ getData(data => {
 
 
 
-
+elementoDOM.appendChild(inicio)
 elementoDOM.appendChild(nodoHTML)
+
 
 // elementoDOM.appendChild(nuevoElemento)
 
