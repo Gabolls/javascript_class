@@ -14,7 +14,7 @@ export const CardSong = ({ data, eventLike, eventPlay }) => {
   )
   song.innerHTML = `
   <div class="bg-blue  justify-center items-center rounded-full w-14 h-14 absolute mt-40 ml-40 " id="play">
-  <img class=" w-full h-full" src="/public/play.svg" alt="">
+  <img class=" w-full h-full" src="/play.svg" alt="">
 </div>
   <div class="h-52 w-full song_image ">
   
