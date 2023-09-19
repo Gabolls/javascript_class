@@ -22,13 +22,7 @@ getData(data => {
   })
 })
 
-while (getData === undefined) {
-  const ha = document.createElement('div')
-  ha.innerHTML = `<div>hola</div>`
 
-  track_list.appendChild(ha)
-  
-}
 
 
 const elementoDOM = document.getElementById('up')
