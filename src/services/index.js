@@ -6,7 +6,11 @@ export const getData = async callback => {
     .then(res => {
       callback(res.data)
       return res.data
+      
     })
-
+  console.log('cerro el loader') 
+  document.getElementById('loader').classList.add('hidden')
   return response
+
+  
 }
