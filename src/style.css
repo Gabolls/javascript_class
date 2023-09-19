@@ -101,6 +101,10 @@ header{
   
 }
 
+.down::before{
+  content: url(/assets/burger.svg);
+}
+
 
 
 #up img {

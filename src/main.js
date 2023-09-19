@@ -28,7 +28,7 @@ getData(data => {
 const elementoDOM = document.getElementById('up')
 
 const inicio = document.createElement('button')
-inicio.classList.add('flex', 'justify-around', 'w-full')
+inicio.classList.add('flex', 'gap-8','w-full', 'justify-center')
 inicio.innerHTML = `<img src="/assets/inicio-activo.svg" alt="">
 <p>Inicio</p>`
 
@@ -40,13 +40,14 @@ inicio.addEventListener('click', () => {
 
 
 const Search = document.createElement('button')
-Search.classList.add('flex', 'justify-around', 'w-full')
+Search.classList.add('flex', 'justify-center', 'w-full', 'gap-8')
 Search.innerHTML = `<img src="/assets/buscar (1).svg" alt="">
 <p>Buscar</p>`
 
 Search.addEventListener('click', () => {
     document.getElementById('track_list').classList.toggle('hidden'),
     document.getElementById('main-song').classList.toggle('hidden')
+    // , document.getElementById('down').classList.toggle('down')
   
 })
 
@@ -107,6 +108,8 @@ buscar.addEventListener('click', () => {
     document.getElementById('main-song').classList.toggle('hidden')
   
 })
+
+
 
  navbar.appendChild(home)
 navbar.appendChild(buscar)
