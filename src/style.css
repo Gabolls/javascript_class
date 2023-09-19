@@ -34,6 +34,7 @@ footer{
 
 header{
   width: 35%;border-right: solid 10px #0D1B2A;
+  display: flex;
 }
 
 .hidden{ 
@@ -50,6 +51,8 @@ header{
 #track_list{
   margin-top: px;
 }
+
+
 
 
 #down{
@@ -96,7 +99,7 @@ font-size: 70px;
 
 
 #buscar{
-  position:;
+  
   border: 0px solid #000;
   border-radius: 99px;
   margin: 0 15px;
@@ -112,7 +115,7 @@ font-size: 70px;
   background-image: url('/assets/buscar\ \(1\).svg');
   background-size: 25px;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position:right;
   width: 95%;
 
 }
@@ -128,6 +131,76 @@ font-size: 70px;
 #play{
   transition: 0.15s;
   
+}
+
+.prueba{
+  padding: 25px 0;
+  display: none;
+  transform: translateX(-300px);
+  position: absolute;
+  margin-left: 60px;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+
+}
+
+.open{
+  
+  animation-name: abrir;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+
+}
+
+
+footer{
+ 
+}
+
+.close{
+
+  animation-name: cerrar;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes abrir {
+  from{
+    transform: translateX(-300);
+  }
+
+  to{
+    transform: translateX(-4px);
+  }
+  
+}
+
+@keyframes cerrar {
+  from{
+    transform: translateX(5px);
+  }
+
+  to{
+    transform: translateX(-300);
+  }
+  
+}
+
+nav{
+  
+  display: none;
+  width: 15%;
+  z-index: 10;
+}
+
+nav img{
+  height: 50px;
+  padding: 0 10px;
 }
 
 .cancion:hover{
@@ -146,10 +219,37 @@ font-size: 70px;
   
   header{
     width: 40%;
+    display: none;
   }
 
+  .prueba{ 
+    display:flex;
+  }
+
+  nav{
+    display: inline;
+   }
+
   main{
-    width: 60%;
+    width: 85%;
+  }
+
+  footer{
+    height: 100px;
+    
+    margin-left: 15%;
+  }
+
+  #current-song{
+    width: 85%;
+    height: 100px;
+
+
+  }
+
+  #current-song img{
+    
+
   }
 
   #down{
@@ -177,5 +277,10 @@ font-size: 70px;
   }
   .album{
     display: none;
+  }
+
+  #play{
+    margin-top: 110px;
+    margin-left: 110px;
   }
 }

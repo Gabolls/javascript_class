@@ -22,13 +22,7 @@ getData(data => {
   })
 })
 
-const buscar = () =>{
-  const aa = documet.getElementById('main')
-  const aja = documet.createElement('div')
-  aja.innerHTML = `<div>hols</div>`
 
-  aa.appendChild(aja)
-}
 
 
 const elementoDOM = document.getElementById('up')
@@ -45,12 +39,12 @@ inicio.addEventListener('click', () => {
 })
 
 
-const nodoHTML = document.createElement('button')
-nodoHTML.classList.add('flex', 'justify-around', 'w-full')
-nodoHTML.innerHTML = `<img src="/assets/buscar (1).svg" alt="">
+const Search = document.createElement('button')
+Search.classList.add('flex', 'justify-around', 'w-full')
+Search.innerHTML = `<img src="/assets/buscar (1).svg" alt="">
 <p>Buscar</p>`
 
-nodoHTML.addEventListener('click', () => {
+Search.addEventListener('click', () => {
     document.getElementById('track_list').classList.toggle('hidden'),
     document.getElementById('main-song').classList.toggle('hidden')
   
@@ -73,10 +67,52 @@ getData(data => {
   })
 })
 
-
+const navbar = document.getElementById('navbar')
 
 elementoDOM.appendChild(inicio)
-elementoDOM.appendChild(nodoHTML)
+elementoDOM.appendChild(Search)
+
+const nav = document.getElementById('nav')
+nav.classList.add( )
+const nav_menu = document.createElement('button')
+nav_menu.classList.add()
+nav_menu.innerHTML = `<img src="/assets/burger.svg" alt="">`
+nav_menu.addEventListener('click', ()=>{
+
+  document.getElementById('navbar').classList.toggle('open')
+  document.getElementById('navbar').classList.toggle('close')
+ 
+
+
+})
+
+const home = document.createElement('button')
+home.classList.add('flex', 'justify-around', 'w-full')
+home.innerHTML = `<img src="/assets/inicio-activo.svg" alt="">
+<p>Inicio</p>`
+
+home.addEventListener('click', () => {
+    document.getElementById('track_list').classList.remove('hidden'),
+    document.getElementById('main-song').classList.remove('hidden')
+  
+})
+
+const buscar = document.createElement('button')
+buscar.classList.add('flex', 'justify-around', 'w-full')
+buscar.innerHTML = `<img src="/assets/buscar (1).svg" alt="">
+<p>Buscar</p>`
+
+buscar.addEventListener('click', () => {
+    document.getElementById('track_list').classList.toggle('hidden'),
+    document.getElementById('main-song').classList.toggle('hidden')
+  
+})
+
+ navbar.appendChild(home)
+navbar.appendChild(buscar)
+
+
+nav.appendChild(nav_menu)
 
 
 // elementoDOM.appendChild(nuevoElemento)
